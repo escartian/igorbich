@@ -34,7 +34,7 @@ function Footer() {
             />
             </a>
             &emsp;
-            Copyright &copy; IgorBich.com 2020
+            Copyright &copy; IgorBich.com 2022
           </div>
         </p>
 
