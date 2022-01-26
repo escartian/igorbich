@@ -20,8 +20,7 @@ function Home() {
                   Feel free to contact or follow me in the below listed social media platforms.
                   I am not very active on any social media but I do check them from time to time. <br />
                   Let me know that you came from my website, I would appreciate that.<br />
-                  This website was made entirely by me using React and Bootstrap frameworks.<br/>
-                  The source code can be made available upon request{' '}
+                  This website was made entirely by me using React and Bootstrap frameworks.{' '}
                 </p>
                 </div>
               </blockquote>
