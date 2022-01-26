@@ -1,5 +1,7 @@
 import React from "react";
 import { Jumbotron } from "react-bootstrap";
+
+import './Global.css';
 import Card from 'react-bootstrap/Card';
 
 function Home() {
@@ -37,7 +39,7 @@ function Home() {
 
 
       </div>
-      <br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br>
     </div>
   );
 }
