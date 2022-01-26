@@ -2,17 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import * as serviceWorker from './serviceWorker';
 
-import Logo from './Logo.png';
-import LinkedIn from './LinkedIn_logo_initials.png';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  Navigation,
+  Footer,
+  Home,
+  About,
+  Resume
+} from "./components";
 
+ReactDOM.render(
+  <Router>
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/resume" element={<Resume />} />
+    </Routes>
+    <Footer />
+  </Router>,
 
+  document.getElementById("root")
+);
+
+/*
 const body = (<div id = "default">
     
   <Navbar bg="dark"  variant="dark" expand="lg">
@@ -72,6 +87,7 @@ ReactDOM.render(
   body, document.getElementById('root')
 );
 
+*/
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
