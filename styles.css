@@ -127,20 +127,21 @@ nav a:hover, nav a:focus-visible, nav a[aria-current="page"] { color: var(--blue
 .button-primary { color: var(--paper); background: var(--ink); }
 .button-primary:hover { color: var(--ink); background: var(--gold); border-color: var(--gold); }
 .button-secondary:hover { color: var(--paper); background: var(--ink); }
-.portrait-wrap { position: relative; margin: 0; padding: 0 0 20px 20px; }
-.portrait-wrap::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 24px 20px 0 0;
-  background: var(--gold);
+.hero-copy, .portrait-wrap { align-self: start; }
+.portrait-wrap { position: relative; margin: 0; }
+.portrait-wrap img, .about-hero img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 52% 64%;
+  border: 12px solid var(--gold);
+  filter: saturate(.8) contrast(1.02);
 }
-.portrait-wrap img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 52% 64%; filter: saturate(.8) contrast(1.02); }
 .portrait-wrap figcaption {
   position: absolute;
-  right: 20px;
-  bottom: 0;
-  left: 0;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
   display: flex;
   justify-content: space-between;
   gap: 12px;
@@ -350,11 +351,11 @@ footer a { color: var(--paper); text-decoration: none; }
   display: grid;
   grid-template-columns: 1.2fr .8fr;
   gap: clamp(50px, 8vw, 110px);
-  align-items: center;
+  align-items: start;
 }
+.about-hero > div, .about-hero > img { align-self: start; }
 .about-hero h1 { margin: 22px 0 30px; font-size: clamp(3.3rem, 6vw, 6rem); }
 .about-hero p:last-child { max-width: 700px; color: var(--ink-soft); font-size: 1.2rem; }
-.about-hero img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 52% 64%; border: 12px solid var(--gold); }
 
 .values { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(50px, 10vw, 140px); border-top: 1px solid var(--line); }
 .values h2 { font-size: clamp(2.5rem, 4.2vw, 4.25rem); }
