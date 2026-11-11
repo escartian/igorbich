@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Igor Bich | Software Engineer Resume</title>
+  <style>
+    /* Everything needed to edit, preview, and print this resume lives in this file. */
+    :root { --ink: #202a33; --muted: #46525d; --accent: #24577b; --paper: #fff; }
+    * { box-sizing: border-box; }
+    html { background: #e9edf1; }
+    body { margin: 0; font: 10pt/1.32 Arial, Helvetica, sans-serif; color: var(--ink); }
+    .page { width: 8.5in; min-height: 11in; padding: .65in .72in; margin: 24px auto;
+            background: var(--paper); box-shadow: 0 3px 16px rgba(20,35,50,.15); }
+    .masthead { text-align: center; margin: 0 0 13px; }
+    h1 { font-size: 20pt; letter-spacing: -.45px; line-height: 1.06; margin: 0 0 5px; }
+    .headline { font-size: 10.5pt; margin-bottom: 5px; }
+    .contact { font-size: 9pt; color: var(--muted); }
+    a { color: inherit; text-decoration: none; }
+    section { margin: 0 0 13px; }
+    h2 { font-size: 10.5pt; line-height: 1.2; color: var(--accent); text-transform: uppercase;
+         letter-spacing: .48px; border-bottom: 1px solid var(--accent); margin: 0 0 8px; padding-bottom: 3px; }
+    p { margin: 0; }
+    .skills p + p { margin-top: 3px; }
+    .company, .client-heading, .item-heading { display: flex; justify-content: space-between; align-items: baseline;
+                                              column-gap: 14px; }
+    .company strong { font-size: 10.5pt; }
+    .dates { color: var(--muted); font-size: 9pt; white-space: nowrap; flex-shrink: 0; }
+    .subrole { color: var(--muted); font-style: italic; font-size: 9pt; margin-top: 2px; }
+    .client { margin-top: 11px; }
+    .client-heading strong, .item-heading strong { font-size: 10pt; }
+    .client-role { color: var(--muted); font-size: 9pt; font-style: italic; margin: 2px 0 4px; }
+    ul { margin: 5px 0 0; padding-left: 18px; }
+    li { margin-bottom: 3px; padding-left: 1px; }
+    li:last-child { margin-bottom: 0; }
+    .project + .project, .early + .early { margin-top: 9px; }
+    .project p, .early p { margin-top: 3px; }
+    .education-line + .education-line { margin-top: 5px; }
+    .no-break { break-inside: avoid; page-break-inside: avoid; }
+    @page { size: letter; margin: 0; }
+    @media print {
+      html, body { background: #fff; }
+      .page { margin: 0; width: 8.5in; min-height: 11in; height: 11in; padding: .65in .72in;
+              box-shadow: none; page-break-after: always; break-after: page; }
+      .page:last-child { page-break-after: auto; break-after: auto; }
+      a { color: inherit; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+    @media screen and (max-width: 850px) {
+      .page { margin: 12px auto; transform-origin: top center; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Edit text directly below. Each .page is one US Letter printed page. -->
+  <main>
+    <article class="page" aria-label="Resume page 1">
+      <header class="masthead">
+        <h1>Igor Bich</h1>
+        <div class="headline">Senior Software Engineer | Full-Stack Java Developer</div>
+        <div class="contact">Highland Park, NJ &nbsp;|&nbsp; <a href="tel:+17326880313">732-688-0313</a> &nbsp;|&nbsp; <a href="mailto:escartian@gmail.com">escartian@gmail.com</a></div>
+      </header>
+      <section>
+        <h2>Professional Summary</h2>
+        <p>Software engineer with 8 years of experience developing and modernizing enterprise applications for government, financial services, and retail. Background in Java, Spring Boot, React, JavaScript/TypeScript, and SQL, spanning full-stack delivery, business workflow automation, legacy system integration, and production support. Experienced working across design, development, testing, release, and cross-team coordination. M.S. in Computer Science.</p>
+      </section>
+      <section class="skills">
+        <h2>Technical Skills</h2>
+        <p><strong>Languages:</strong> Java, JavaScript, TypeScript, SQL, Python, Rust, GDScript, C++, C, C#, shell scripting</p>
+        <p><strong>Frameworks / Web:</strong> Spring Boot, React, Godot, wgpu, winit, egui, HTML, CSS, JUnit</p>
+        <p><strong>Platforms / Tools:</strong> Microsoft Azure, Snowflake, Git, Jira, Jazz</p>
+        <p><strong>AI-assisted Development:</strong> Microsoft Copilot and Google Gemini (professional use); Codex and Claude (personal projects)</p>
+      </section>
+      <section>
+        <h2>Professional Experience</h2>
+        <div class="company"><strong>Tata Consultancy Services (TCS)</strong><span class="dates">Sep 2018 – Sep 2026</span></div>
+        <p class="subrole">Software Engineer Consultant | Client engagements in government, financial services, and retail</p>
+        <div class="client no-break">
+          <div class="client-heading"><strong>Connecticut Department of Labor</strong><span class="dates">Apr 2025 – Aug 2026</span></div>
+          <p class="client-role">Full-Stack Software Engineer | TCS client engagement</p>
+          <ul>
+            <li>Developed a new automated scheduling and notification system for the RESEA program, supporting hundreds of appointments and thousands of participants served weekly.</li>
+            <li>Designed and built 12+ pages for appointment status, scheduling workflows, and updates to application data.</li>
+            <li>Delivered responsive desktop and mobile questionnaires and forms for program participants.</li>
+            <li>Supported batch-job monitoring, production issue investigation, and defect resolution.</li>
+          </ul>
+        </div>
+        <div class="client no-break">
+          <div class="client-heading"><strong>Kansas Department of Labor</strong><span class="dates">Jan 2023 – Mar 2025</span></div>
+          <p class="client-role">Full-Stack Software Engineer | TCS client engagement</p>
+          <ul>
+            <li>Developed Kansas-specific unemployment insurance claim forms, weekly work-search workflows, and questionnaires for a statewide portal serving thousands of claimants.</li>
+            <li>Implemented updated UI requirements while preserving existing application behavior through portal modernization and production rollout.</li>
+            <li>Diagnosed and resolved questionnaire-loading issues and complex edge cases affecting claimant workflows.</li>
+            <li>Built SQL table scripts and queries for questionnaire and form data; addressed defects and migration-related data issues.</li>
+          </ul>
+        </div>
+        <div class="client no-break">
+          <div class="client-heading"><strong>Albertsons</strong><span class="dates">Apr 2021 – Sep 2022</span></div>
+          <p class="client-role">Software Engineer | TCS client engagement</p>
+          <ul>
+            <li>Worked on a company-wide pricing-label workflow that transmitted store price-sticker data to an external printing provider for production and shipment to Albertsons stores.</li>
+            <li>Helped integrate supply-chain applications into a unified React and Java web platform; developed Java and React unit tests.</li>
+            <li>Reverse-engineered COBOL mainframe functionality for Java modernization and contributed to Azure and Snowflake transition efforts.</li>
+            <li>Resolved defects in billing, forecasting, and replenishment applications.</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+    <article class="page" aria-label="Resume page 2">
+      <section>
+        <h2>Professional Experience <span style="font-weight:normal;text-transform:none;letter-spacing:0">(continued)</span></h2>
+        <div class="client no-break" style="margin-top:0">
+          <div class="client-heading"><strong>USAA</strong><span class="dates">Jun 2020 – Mar 2021</span></div>
+          <p class="client-role">Software Engineer | TCS client engagement</p>
+          <ul>
+            <li>Improved React interfaces for customer bank-account onboarding; documented UI control flows for nontechnical stakeholders.</li>
+            <li>Performed unit and regression testing for banking application functionality.</li>
+          </ul>
+        </div>
+        <div class="client no-break">
+          <div class="client-heading"><strong>Bank of America</strong><span class="dates">Jan 2019 – May 2020</span></div>
+          <p class="client-role">Software Engineer / Tech Lead | TCS client engagement</p>
+          <ul>
+            <li>Coordinated development and release work across a 5–12-person team and a broader multi-team organization; performed Java code reviews and JUnit testing.</li>
+            <li>Enhanced Java middleware for cross-platform data exchange and implemented AML-related client-verification functionality.</li>
+            <li>Supported weekend deployments and documented defects and enhancements in Jira for engineering and DevOps partners.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Selected Independent Projects</h2>
+        <div class="project no-break">
+          <div class="item-heading"><strong>3D Steampunk-Fantasy Automation Game</strong><span class="dates">In progress</span></div>
+          <p>Building a custom game-specific 3D renderer and systems in Rust using wgpu (graphics), winit (windowing/input), and egui (UI), with core game logic separated into engine-independent crates. Developing dungeon exploration and automated resource-gathering mechanics; using Codex and Claude for AI-assisted development.</p>
+        </div>
+        <div class="project no-break">
+          <div class="item-heading"><strong>2D Mobile Platformer</strong><span class="dates">In progress</span></div>
+          <p>Developing a mobile-targeted 2D platformer in Godot using GDScript, with Codex and Claude supporting AI-assisted prototyping and implementation.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Earlier Technical Experience</h2>
+        <div class="early no-break">
+          <div class="item-heading"><strong>The College of New Jersey — Computer Science Research Student</strong><span class="dates">Feb 2018 – May 2018</span></div>
+          <p>Explored video-interest prediction using Python keyframe extraction and MATLAB-based neural-network classification.</p>
+        </div>
+        <div class="early no-break">
+          <div class="item-heading"><strong>Leidos — Software Developer Intern</strong><span class="dates">May 2017 – Aug 2017</span></div>
+          <p>Enhanced FAA testing GUI with one-click test execution and customizable input and interface options.</p>
+        </div>
+        <div class="early no-break">
+          <div class="item-heading"><strong>Ipreo — Software Engineer Intern</strong><span class="dates">May 2016 – Aug 2016</span></div>
+          <p>Automated server setup and software deployment tasks through scripting.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <div class="education-line item-heading"><span><strong>Stevens Institute of Technology</strong> — M.S., Computer Science</span><span class="dates">2025</span></div>
+        <div class="education-line item-heading"><span><strong>The College of New Jersey</strong> — B.S., Computer Science</span><span class="dates">2018</span></div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
