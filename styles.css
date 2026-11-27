@@ -223,6 +223,25 @@ nav a:hover, nav a:focus-visible, nav a[aria-current="page"] { color: var(--blue
 .project-card li { padding: 4px 10px; border: 1px solid currentColor; border-radius: 50px; font-size: .72rem; }
 .project-status { margin-top: 20px; font-size: .78rem; font-weight: 700; }
 
+.project-grid-portfolio { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.project-grid-portfolio .project-featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; min-height: 420px; padding: 0; }
+.portfolio-image { display: block; min-height: 100%; overflow: hidden; }
+.portfolio-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+.portfolio-image:hover img, .portfolio-image:focus-visible img { transform: scale(1.03); }
+.portfolio-content { display: flex; flex-direction: column; padding: clamp(28px, 4vw, 50px); }
+.portfolio-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; align-items: baseline; }
+.project-grid-portfolio .project-label { margin: 0; }
+.project-grid-portfolio .project-status { margin: 0; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; }
+.project-grid-portfolio h3 { margin: 32px 0 16px; font-size: clamp(2rem, 3.4vw, 3.5rem); }
+.project-grid-portfolio p { line-height: 1.55; }
+.project-grid-portfolio ul { margin: 10px 0 0; }
+.portfolio-link { display: flex; justify-content: space-between; gap: 20px; align-items: center; margin-top: auto; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.55); font-weight: 700; text-decoration: none; }
+.portfolio-link:hover, .portfolio-link:focus-visible { color: var(--gold); }
+.portfolio-card { min-height: 340px; padding: clamp(28px, 3vw, 42px); border-color: var(--line); border-top: 4px solid var(--blue); }
+.portfolio-card h3 { max-width: 450px; margin-top: 35px; font-size: clamp(2rem, 3vw, 3rem); }
+.portfolio-card > p { color: var(--ink-soft); }
+.portfolio-card ul { margin-top: auto; padding-top: 20px; }
+
 .toolkit { display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(50px, 10vw, 140px); }
 .toolkit h2 { font-size: clamp(2.5rem, 4.2vw, 4.25rem); }
 .skill-groups { border-top: 1px solid var(--ink); }
@@ -376,6 +395,8 @@ footer a { color: var(--paper); text-decoration: none; }
   .earlier-grid { grid-template-columns: 1fr; }
   .earlier-grid article + article { padding-left: 0; border-top: 1px solid rgba(255,255,255,.22); border-left: 0; }
   .project-grid { grid-template-columns: 1fr; }
+  .project-grid-portfolio .project-featured { grid-template-columns: 1fr; }
+  .portfolio-image { height: 320px; min-height: 0; }
   .project-card { min-height: 390px; }
   .route-grid { grid-template-columns: 1fr; }
   .route-card + .route-card { border-top: 0; border-left: 1px solid var(--ink); }
@@ -409,6 +430,11 @@ footer a { color: var(--paper); text-decoration: none; }
   .timeline article { padding-left: 20px; }
   .timeline-meta { flex-direction: column; }
   .project-card { min-height: 420px; }
+  .project-grid-portfolio .project-featured, .project-grid-portfolio .portfolio-card { min-height: 0; }
+  .portfolio-image { height: 230px; }
+  .portfolio-content, .portfolio-card { padding: 26px; }
+  .project-grid-portfolio h3 { margin-top: 26px; }
+  .portfolio-link { margin-top: 28px; }
   .document-grid { grid-template-columns: 1fr; }
   .document-card + .document-card { border-left: 0; }
   footer { align-items: flex-start; flex-direction: column; }
@@ -418,3 +444,14 @@ footer a { color: var(--paper); text-decoration: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+/* Games page: small print under a play button. */
+.project-note { margin-top: 14px; font-size: 0.9rem; opacity: 0.85; }
+
+/* Games page: a card led by a screenshot that also launches the game. */
+.game-card { padding: 0; overflow: hidden; }
+.game-shot { display: block; border-bottom: 1px solid var(--ink); }
+.game-shot img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; transition: transform 0.3s ease; }
+.game-shot:hover img, .game-shot:focus-visible img { transform: scale(1.02); }
+.game-body { padding: clamp(24px, 3.5vw, 44px); }
+.game-card h3 { margin: 18px 0 14px; }

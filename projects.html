@@ -12,16 +12,36 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Igor Bich, home"><span class="brand-mark" aria-hidden="true">IB</span><span>Igor Bich</span></a>
-    <nav aria-label="Primary navigation"><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="projects.html" aria-current="page">Projects</a><a href="about.html">About</a></nav>
+    <nav aria-label="Primary navigation"><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="projects.html" aria-current="page">Projects</a><a href="games.html">Games</a><a href="about.html">About</a></nav>
     <a class="header-contact" href="mailto:escartian@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="main">
     <section class="page-hero" id="top"><p class="section-kicker">Independent work</p><h1>Learning by building from the ground up.</h1><p>Personal projects give me room to explore unfamiliar technologies, lower-level systems, interactive design, and AI-assisted development.</p></section>
     <section class="projects section">
-      <div class="project-grid">
-        <article class="project-card project-featured"><p class="project-label">Systems · Graphics · Game development</p><h3>3D steampunk-fantasy automation game</h3><p>Building a custom game-specific renderer and modular systems in Rust with wgpu, winit, and egui. The project explores dungeon discovery, automated resource gathering, and engine-independent architecture.</p><ul aria-label="Technologies"><li>Rust</li><li>wgpu</li><li>egui</li><li>winit</li></ul><span class="project-status">In progress</span></article>
-        <article class="project-card"><p class="project-label">Mobile · Game development</p><h3>2D mobile platformer</h3><p>Developing a mobile-targeted platformer in Godot, using GDScript and AI-assisted prototyping to explore responsive movement and compact game systems.</p><ul aria-label="Technologies"><li>Godot</li><li>GDScript</li></ul><span class="project-status">In progress</span></article>
+      <div class="project-grid project-grid-portfolio">
+        <article class="project-card project-featured">
+          <a class="portfolio-image" href="games/star-trader/index.html" aria-label="Play Star Trader"><img src="assets/games/star-trader.jpg" width="1088" height="680" alt="Star Trader galaxy map showing faction territories, trading fleets, and raider bands" loading="lazy"></a>
+          <div class="portfolio-content">
+            <div class="portfolio-meta"><p class="project-label">01 / Playable game</p><span class="project-status">In progress</span></div>
+            <h3>Star Trader</h3>
+            <p>A space trading and piracy game built in Rust for desktop and browser. Trade in a supply-and-demand economy, cross faction territory, and fight turn-based fleet battles. Browser saves and an original soundtrack make the prototype ready to play.</p>
+            <ul aria-label="Technologies"><li>Rust</li><li>WebAssembly</li><li>wgpu</li><li>egui</li></ul>
+            <a class="portfolio-link" href="games/star-trader/index.html">Play in your browser <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="project-card portfolio-card">
+          <div class="portfolio-meta"><p class="project-label">02 / Systems &amp; graphics</p><span class="project-status">In progress</span></div>
+          <h3>3D sci-fi automation game</h3>
+          <p>Building a custom renderer and modular game systems in Rust. Discovery and automated resource gathering drive the design, with core logic kept independent of the renderer.</p>
+          <ul aria-label="Technologies"><li>Rust</li><li>wgpu</li><li>winit</li><li>egui</li></ul>
+        </article>
+        <article class="project-card portfolio-card">
+          <div class="portfolio-meta"><p class="project-label">03 / Mobile game</p><span class="project-status">In progress</span></div>
+          <h3>2D mobile platformer</h3>
+          <p>Developing a mobile-targeted platformer in Godot, using GDScript and AI-assisted prototyping to explore responsive movement and compact game systems.</p>
+          <ul aria-label="Technologies"><li>Godot</li><li>GDScript</li></ul>
+        </article>
       </div>
     </section>
     <section class="toolkit section" aria-labelledby="toolkit-title"><div><p class="section-kicker">Toolkit</p><h2 id="toolkit-title">A practical, adaptable stack.</h2></div><div class="skill-groups"><div><h3>Production core</h3><p>Java · Spring Boot · React · Angular · JavaScript · TypeScript · SQL</p></div><div><h3>Systems &amp; creative</h3><p>Rust · Python · C++ · C · C# · Godot</p></div><div><h3>Platforms &amp; delivery</h3><p>Azure · Snowflake · Git · Jira · JUnit · shell scripting</p></div><div><h3>AI-assisted development</h3><p>Copilot · Gemini · Codex · Claude</p></div></div></section>

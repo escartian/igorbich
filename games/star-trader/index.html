@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080d12" />
+    <title>Star Trader</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #080d12;
+      }
+
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+      }
+    </style>
+  <link rel="modulepreload" href="./game-client-fb58486eacf05b78.js" crossorigin="anonymous" integrity="sha384-yz4JZcd2nEP8Qv21csdMGAxBg2M7C/vS4T87XYyEnDjz30KznFXNCSNuJR2Xk6i1"><link rel="preload" href="./game-client-64df0bbbc873ba4d_bg.wasm" crossorigin="anonymous" integrity="sha384-e/cI7RbAwmAxxvZZhZEvdum3+zSEsZef6zs0yfn0e2goJLd3aSqOpnf8kYgyp1P+" as="fetch" type="application/wasm"></head>
+  <body>
+    <canvas id="game-canvas"></canvas>
+    
+<script type="module">
+import init, * as bindings from './game-client-fb58486eacf05b78.js';
+
+const wasm = await init({ module_or_path: './game-client-64df0bbbc873ba4d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+    <!-- Music blocks, fetched by the game after start (src/audio/library.rs). -->
+    
+  </body>
+</html>

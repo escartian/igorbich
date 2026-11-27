@@ -1,4 +1,5 @@
 # Job-specific cover letters
 *.pdf
 Igor_Bich_CoverLetter_*.html
+!Igor_Bich_CoverLetter_Generic.html
 .DS_Store
